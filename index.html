@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitness Tracker App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🏋️‍♀️ Fitness Tracker</h1>
+
+    <div class="input-section">
+      <h2>Add Activity</h2>
+      <input type="date" id="date" />
+      <input type="text" id="exercise" placeholder="Exercise Type (e.g., Running)" />
+      <input type="number" id="duration" placeholder="Duration (mins)" />
+      <input type="number" id="calories" placeholder="Calories Burned" />
+      <button id="add-btn">Add Activity</button>
+    </div>
+
+    <div class="summary-section">
+      <h2>Today's Summary</h2>
+      <p><strong>Total Workouts:</strong> <span id="total-workouts">0</span></p>
+      <p><strong>Total Calories:</strong> <span id="total-calories">0</span> kcal</p>
+      <div class="progress-container">
+        <div id="progress-bar"></div>
+      </div>
+    </div>
+
+    <div class="log-section">
+      <h2>Activity Log</h2>
+      <table id="activity-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Exercise</th>
+            <th>Duration</th>
+            <th>Calories</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
